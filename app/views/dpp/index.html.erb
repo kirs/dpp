@@ -1,0 +1,31 @@
+<h1>Mobilní DPP.cz</h1>
+<div class="form">
+<% form_tag("find", :method => :get) do %>
+<div class="field">
+  <label for="query_from">Odkud:</label>
+  <%= text_field "query", "from", :size=> 20 %>
+</div>
+<div class="field">
+  <label for="query_to">Kam:</label>
+  <%= text_field "query", "to", :size=> 20 %>
+</div>
+<div class="field">
+  <label for="query_date">Datum:</label>
+  <%= text_field "query", "date", :size=> 20, :value=> Time.now.localtime.strftime("%h.%m.%Y") %>
+</div>
+<div class="field">
+  <label for="query_time">Čas:</label>
+  <%= text_field "query", "time", :size=> 20, :value=> Time.now.strftime("%H:%M") %>
+</div>
+
+<div class="field">
+  
+  <%= radio_button 'query', 'isdep', 1, :checked => true -%> odjezdu / <%= radio_button 'query', 'isdep', 0 -%> příjezdu
+</div>
+
+
+
+
+  <%= submit_tag "vyhledat" %>
+<% end -%>
+</div>

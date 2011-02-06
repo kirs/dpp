@@ -1,0 +1,10 @@
+<h1>Spojení: <%= @query[:from] %> &mdash; <%= @query[:to] %>:</h1>
+<%=@isdep2 %>
+<% @trips.each do |p| %>	
+	<p><strong><%= p[0].split.join(" ") %></strong></p>
+	<ul>
+	<% p[1].each do |dir| %>	
+		<li><%= dir %></li>
+	<% end %>
+	</ul>
+<% end %>
