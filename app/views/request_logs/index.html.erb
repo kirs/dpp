@@ -1,0 +1,7 @@
+<% content_for :title do %>Logs<% end %>
+<h2>Logs</h2>
+<% @request_logs.each do |log| %>	
+  <p>
+    <%= log.route_at.strftime("%m/%d/%Y %H:%M") %>: <%= log.from %> &rarr; <%= log.to %> [<%= log.ip %>]
+  </p>
+<% end %>

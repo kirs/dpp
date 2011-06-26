@@ -2,4 +2,14 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  helpers:
+    label:
+      request:
+        via: "Přes"
+        from: "Odkud"
+        to: "Kam"
+        with_transfers: "Přestupy"
+  not_found: "Objekt nebyl nalezen."
+  from_to: "až"
+  empty_fields: "Vyplňte pole «Odkud» a «Kam»."
+  dash: "–"

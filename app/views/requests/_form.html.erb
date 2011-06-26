@@ -1,0 +1,33 @@
+<% if(notice) %><p id="notice"><%= notice %></p><% end %>
+<div class="form">
+<%= form_for(@request, :url => { :action => "find" }) do |f| %>
+  <div class="field">
+    <%= f.label :from %>
+    <%= f.text_field :from, :size => 20 %>
+  </div>
+  <div class="field">
+    <%= f.label :to %>
+    <%= f.text_field :to, :size => 20 %>
+  </div>
+  <div class="field uninfo">
+    <%= f.label :via %>
+    <%= f.text_field :via, :size => 20 %>
+  </div>
+  <div class="field">
+    <%= f.datetime_select :route_at, :use_month_names => %w(leden únor březen duben květen červen červenec srpen září říjen listopad prosinec), :discard_year => true, :order => [:day, :month, :hour, :minute] %>
+  </div>
+  <div class="field">
+    <%= f.radio_button :is_departure_time, 1, :checked => true -%> odjezdu / <%= f.radio_button :is_departure_time, 0 -%> příjezdu
+  </div>
+  <div class="field">
+    <%= f.label :with_transfers %>
+    <%= f.radio_button :with_transfers, 0 %> bez přestupů /<br/><%= f.radio_button :with_transfers, 1, :checked => true %> s přestupy - nejvýše <%= f.select :transfers_number, (1..7).to_a, :selected => 7 %>
+  </div>
+  <div class="field">
+    <!-- <checkbox> jen nízkopodlažní spoje -->
+  </div>
+  <div class="field">
+    <%= f.submit 'vyhledat' %>
+  </div>
+<% end %>
+ </div>
