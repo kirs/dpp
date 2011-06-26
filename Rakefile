@@ -4,6 +4,8 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
+# Hack for rake 0.9.x
+
 module ::Dpp
   class Application
     include Rake::DSL
