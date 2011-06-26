@@ -3,5 +3,11 @@ Designed for easy and simple access to Prague public transport timetables via mo
 
 You are welcome to fork this app! If you have questions, please write me on razor.psp@gmail.com.
 
+## Todo
+
+* hide password from controller
+* remove assets manager
+* request_logs/ => logs/
+
 ## Authors
 [Kirs](https://github.com/kirs/)
