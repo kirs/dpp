@@ -3,5 +3,5 @@ Designed for easy and simple access to Prague public transport timetables via mo
 
 You are welcome to fork this app! If you have questions, please write me on razor.psp@gmail.com. [Visit app](http://dpp.cz.cc/about)
 
-#### Authors
+## Authors
 [Kirs](https://github.com/kirs/)
