@@ -8,6 +8,7 @@ You are welcome to fork this app! If you have questions, please write me on razo
 * hide password from controller
 * remove assets manager
 * request_logs/ => logs/
+* add functional tests and fixtures
 
 ## Authors
 [Kirs](https://github.com/kirs/)
