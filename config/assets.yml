@@ -1,5 +1,0 @@
-stylesheets:
-  common:
-    - public/stylesheets/reset.css
-    - public/stylesheets/scaffold.css
-    - public/stylesheets/style.css
