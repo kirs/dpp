@@ -10,7 +10,6 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # Use unicorn as the web server in production
 group :production do
   gem 'unicorn'
-  # gem 'mysql2'
 end
 
 gem 'nokogiri'
