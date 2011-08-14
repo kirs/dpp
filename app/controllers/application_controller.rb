@@ -4,8 +4,8 @@ class ApplicationController < ActionController::Base
   protected
   
   def admin_required
-    authenticate_or_request_with_http_basic do |user_name, password|
-      user_name == 'admin' && password == 's3cr3t'
-    end # if RAILS_ENV == 'production' || params[:admin_http]
+    authenticate_or_request_with_http_basic do |username, password|
+      Admin.find_by_username_and_password(username, password)
+    end
   end
 end

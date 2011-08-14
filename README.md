@@ -5,7 +5,6 @@ You are welcome to fork this app! If you have questions, please write me on razo
 
 ## Todo
 
-* hide password from controller
 * add functional tests and fixtures
 
 ## Authors
