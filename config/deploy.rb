@@ -42,6 +42,10 @@ namespace :deploy do
     start
   end
   
+  task :symlink_configs, :roles => :web do
+    run "ln -sf #{deploy_to}/shared/database.yml #{latest_release}/config/database.yml"
+  end
+  
   # From Max Rivero config - see http://pastie.org/2427209
   # desc "Preserve images"
   # task :symlink_images, :roles => :web do
@@ -67,3 +71,5 @@ end
 # to remove old releases
 # see :keep_releases
 after "deploy:update", "deploy:cleanup"
+
+after 'deploy:update_code', 'deploy:symlink_configs'
