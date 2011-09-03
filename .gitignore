@@ -4,4 +4,3 @@ config/database.yml
 log/*.log
 tmp/**/*
 .rvmrc
-config/unicorn.rb
