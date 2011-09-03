@@ -8,7 +8,7 @@ set :rvm_type, :user # using rvm-per-user
 set :application, "dpp"
 set :rails_env, "production"
 # set :domain, "mitwell@mitwell.iempire.ru:235"
-set :domain, "mitwell@m2.iempire.tk"
+set :domain, "dpp@m2.iempire.tk"
 set :repository,  "git@github.com:kirs/dpp.git"
 set :use_sudo, false
 set :deploy_to, "/var/www/#{application}"
