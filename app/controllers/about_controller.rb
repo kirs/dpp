@@ -1,8 +1,4 @@
 class AboutController < ApplicationController
-  def developer
-  end
-
-  def api_info
-  end
+  # serving 2 pages: about and developer
 
 end
